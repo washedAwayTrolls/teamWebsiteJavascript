@@ -1,0 +1,174 @@
+
+/*------------------------------------------- General Styles -------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap');
+h1 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+}
+h2 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+}
+h3 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+h4 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+h5 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+}
+h6 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin:0;
+  line-height: 1.8;
+  color:#353535;
+}
+body {
+  margin:0;
+}
+
+/*------------------------------------------- Nathan -------------------------------------------*/
+.teamNames {
+    color:cornflowerblue;
+
+}
+
+.blueBackground {
+    background-color:blue;
+    color:yellow;
+}
+
+.nathanTitle {
+    text-align:center;
+    font-size:xx-large;
+    font-family:'Courier New', Courier, monospace;
+    padding-top:20px;
+}
+
+.nathanAboutTitle {
+    text-align:center;
+    font-size:large;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+#banner {
+    text-align:center;
+
+    background-color:#D89F3A;
+    border-radius: 20px;
+
+    padding: 107px 101px 0 102px;
+    margin-bottom: 1.5rem;
+}
+/*------------------------------------------- Lexi -------------------------------------------*/
+body.lexi {
+  margin:0;
+  background-color:#E0E0E0;
+}
+/* Hero */
+.lexi .hero {
+  padding: 150px 0;
+  background-image: url(lexi-hero.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-bottom: 10px solid #353535;
+}
+.lexi .hero h1 {
+  color:#fff;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+/* Body */
+.page {
+  width: 100%;
+  display: flex;
+}
+.page .sidebar {
+  background-color:#cccccc;
+  width:25%;
+  padding: 80px;
+}
+.page .sidebar .image {
+  margin:0 auto;
+  text-align: center;
+  margin: 20px 0;
+}
+.lexi hr {
+  border-bottom: 6px dashed #bababa;
+}
+.page .sidebar .image img {
+  border-radius: 50%;
+  width:50%;
+  box-shadow: 0 3px 35px rgba(0,0,0,0.15);
+}
+.page .content {
+  width:75%;
+  padding: 80px 60px 60px 180px;
+}
+.lexi footer {
+  padding: 60px;
+  background-color:#353535;
+  text-align: center;
+}
+.lexi footer p {
+  color:#eee;
+}
+a.btn-gold, a.btn-gold:link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color:#D89F3A;
+  text-decoration: none;
+  color:#fff;
+  font-weight: 700;
+  border-radius: 24px;
+  transition: 250ms all;
+  margin-bottom: 20px;
+}
+a.btn-gold:hover, a.btn-gold:active {
+  background-color:#AA590F;
+}
+.hover-effect:after {
+  width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    content: '';
+    position: absolute;
+    z-index: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 350ms;
+}
+.hover-effect:hover:after {
+  height:200px;
+  opacity: 0.25;
+}
+
+/*------------------------------------------- Carlos -------------------------------------------*/
+
+/*------------------------------------------- Emily -------------------------------------------*/
+
+/*------------------------------------------- Tim -------------------------------------------*/

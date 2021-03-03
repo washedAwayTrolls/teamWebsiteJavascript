@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+</head>
+<body>
+
+   <div>
+
+    <section>
+        <div id="dropDownList" style="background-color:#111111; display: flex; flex-wrap: wrap; margin: 0">
+
+            <a href="index.html"><button class="dropbtn">Home</button></a>
+
+            <div class="dropdown">
+                <button class="dropbtn">The Team</button>
+                <div class="dropdown-content">
+                <a href="nathan.html">Nathan</a>
+                <a href="lexi.html">Lexi</a>
+                <a href="tim2.html">Tim</a>
+                <a href="emily.html">Emily</a>
+                <a href="carlos.html">Carlos</a>
+                </div>
+              </div>
+               <a href="About.html"><button class="dropbtn">About</button></a>
+            </div>
+        </div>
+
+        <div id="banner" style="position:relative; z-index:-1;">
+
+
+
+
+
+
+
+            <h1>Washed Ashore Trolls</h1>
+            <div>
+            <!--<div class="wave1"></div>
+            <div class="wave2"></div>
+            <div class="wave3"></div>-->
+
+
+        </div>
+
+              <!--Wavify stuff-->
+            <div style="position:relative; z-index: -1; background-color: yellow;">
+                <section class="test1">
+                    <svg width="100%" height="100%" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+
+                </section>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+                integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+                crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.js"
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+                crossorigin="anonymous"></script>
+                <script src="wavify.js"></script>
+                <script src="jquery.wavify.js"></script>
+                <script type="text/javascript">
+                var myWave = $('#myID').wavify({
+              height: 26,
+              bones: 3,
+              amplitude: 40,
+              color: '#1A6FA8',
+              speed: .25});
+              </script>
+              <!--#D89F3A-->
+            </div>
+            <!--Wavify stuff-->
+
+        </div>
+
+    </section>
+    <div>
+        <h1 class="meetTheTeamText">Meet the Team</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="box" data-toggle="modal" data-target="#natModal">
+            <div class="image">
+                <img src="nathanPic.jpg" />
+            </div>
+            <div class="content">
+                <h3 class="names">Nathan Farrell</h3>
+                <h4 style="text-align:center; color:gray">Project Lead</h4>
+
+            </div>
+        </div>
+
+        <div class="box" data-toggle="modal" data-target="#lexModal">
+            <div class="image">
+                <img src="dargon.png" alt="yeet" />
+            </div>
+            <div class="content">
+                <h3 class="names">Lexi Chavez</h3>
+                <h4 style="text-align:center; color:gray">Primary Developer</h4>
+            </div>
+        </div>
+
+        <div class="box" data-toggle="modal" data-target="#timModal">
+            <div class="image">
+                <img src="panda.jpeg" />
+            </div>
+            <div class="content">
+                <h3 class="names">Timothy Cammack</h3>
+                <h4 style="text-align:center; color:gray">Secondary Artist</h4>
+            </div>
+        </div>
+
+        <div class="box" data-toggle="modal" data-target="#emModal">
+            <div class="image">
+                <img src="emilysnowboard.png" /></a>
+            </div>
+            <div class="content">
+                <h3 class="names">Emily Mead</h3>
+                <h4 style="text-align:center; color:gray">Tester / Secondary Developer</h4>
+            </div>
+        </div>
+
+        <div class="box" data-toggle="modal" data-target="#carModal">
+            <div class="image">
+                <img src="IMG_0917 copy.png"></a>
+            </div>
+            <div class="content">
+                <h3 class="names">Carlos Campa</h3>
+                <h4 style="text-align:center; color:gray">Artist / Designer</h4>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--modals-->
+
+    <div class="modal fade" id="natModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Nathan</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="nathan.html"><img src="nathanPic.jpg" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <h5> I grew up in a small town in Idaho and got attached to video games.</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="lexModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Lexi</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="lexi.html"><img src="lexi-hero.png" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <p>hi yes, I code websites - and I suffer. Web development is my thing and everyday I cry more.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="timModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Tim</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="tim2.html"><img src="panda.jpeg" class="modal-Image" /></a>
+                    </div>
+                <hr>
+                    <p>I code VR, and I too suffer</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="emModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Emily</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="emily.html"><img src="emilysnowboard.png" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="carModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Carlos</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="carlos.html"><img src="IMG_0917 copy.png" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <p>Hello I design 3d models and animate them. I like reading sci fi and fantasy books.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--other stuff-->
+
+
+
+    </div>
+
+
+
+    <footer style="position:relative; z-index: 3">
+        <h5>Check out our mock-up <a href="style.html">style page using CSS</a></h5>
+        <p>&copy; 2021 Washed Ashore
+                Trolls</p>
+    </footer>
+
+
+</div>
+    <!-- Trigger the modal with a button -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        h5 {
+            font-size: medium;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body class="lexi">
+
+    <div class="hero" >
+        <div style="background-color:#111111; display: flex; flex-wrap: wrap; margin: 0">
+        <a href="index.html"><button class="dropbtn">Home</button></a> 
+        <div class="dropdown">
+            <button class="dropbtn">The Team</button>
+            <div class="dropdown-content">
+            
+            <a href="nathan.html">Nathan</a>
+            <a href="lexi.html">Lexi</a>            
+            <a href="emily.html">Emily</a>
+            <a href="carlos.html">Carlos</a>
+            </div>
+        </div>
+        <a href="About.html"><button class="dropbtn">About</button></a> 
+    </div>
+        <div class="hero-bg">
+            <h1>Tim's Profile</h1>
+            <h4>secondary artist</h4>
+            
+        </div>
+    </div>
+
+    <div class="page">
+
+        <div class="sidebar">
+            
+                <img src="panda.jpeg" class="timage">
+            
+            <hr/>
+            <h2>Timothy Cammack</h2>
+            <ul id="blue-list">
+                <h4 class="timh4">Hobbies & Interests</h4>
+                <hr>
+              <li style="font-weight:bold;">Animation</li>
+              <li>World Design</li>
+              <li>Virtual Reality Development</li>
+              <li>Video Games</li>
+            </ul>
+        
+            
+          </div>
+
+
+        <div class="content">
+            <h3>About Me</h3>
+
+            <h5 class="timh5">
+                I grew up in southern California and moved to Idaho when I graduated from high school.
+                A year after moving I heard of an increadibly interesting degree called GIMM.
+                After startingting the program I developed an great love for video game design and the puzzle solving of
+                coding.
+                I am currently developing my own VR game and exploring the multitude of possibilities the VR open up.
+            </h5>
+
+           
+            
+            <ul>
+              
+            </ul>
+
+            <button class="tiModalBtn" data-toggle="modal" data-target="#gameModal">
+                <p>
+                    Check out this game!
+                </p>
+            </button>
+
+            <button class="tiModalBtn" data-toggle="modal" data-target="#artModal">
+                <p>
+                    Check out this art!
+                </p>
+            </button>
+    
+        
+            
+          </div>
+
+
+        
+        <div class="modal fade" id="gameModal" role="dialog">
+            <div class="modal-dialog modal-lg" style="width: 1600px;">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">SpaceShooters!</h4>
+                        <h5>Made in Gamemaker</h5>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <iframe src="space.html" name="iframe_a" height="800px" width="1050px"
+                            title="Iframe Example"></iframe>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       
+
+        <div class="modal fade" id="artModal" role="dialog">
+            <div class="modal-dialog" style="width: 1000px;">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">VR game concept art</h4>
+                        <h5></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+
+                            <img src="troll1.jpg" class="modal-Art" style="width: 100%; height: 100%;">
+                        </div>
+                        <div>
+
+                            <img src="troll2.jpg" style="width: 100%; height: 100%;" class="modal-Art">
+                        </div>
+                        <div>
+
+                            <img src="ericthered.jpg" style="width: 100%; height: 100%;" class="modal-Art">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        
+
+    </div>
+</body>
+
+
+<footer>
+    <p>Copyright Washed Ashore Trolls</p>
+    </footer>
+
+
+
+
+
+
+</html>
