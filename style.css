@@ -73,14 +73,17 @@ body {
   margin:0;
 }
 /*------------------------------------------- INDEX -------------------------------------------*/
-.row {
+.img-responsive {
+  max-width: 100%;
+  margin:0 auto;
+}
+/*.row {
   display: flex;
   padding: 80px;
   flex-wrap: wrap;
   background-image: linear-gradient(0deg,#174563, #1A6FA8) ;
   margin: 0;
-
-}
+}*/
 .row .box .image {
   width:100%;
 
@@ -152,7 +155,7 @@ footer a {
   font-weight:600;
   text-transform: uppercase;
   margin-top:50px;
-  
+
   letter-spacing:2px;
   word-spacing:3px;
   font-family: 'Lato', sans-serif;
@@ -568,7 +571,7 @@ a.btn-gold:hover, a.btn-gold:active {
 
 
 
-  .container{
+  .carlos .container{
     text-align: center;
     position: absolute;
     top: 50%;
@@ -576,7 +579,7 @@ a.btn-gold:hover, a.btn-gold:active {
     transform: translate(-50%, -50%);
     width: 100%
   }
-  .container span{
+  .carlos .container span{
     text-transform: uppercase;
     display: block;
   }
