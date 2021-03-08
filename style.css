@@ -73,9 +73,15 @@ body {
   margin:0;
 }
 /*------------------------------------------- INDEX -------------------------------------------*/
-.img-responsive {
+.img-responsive img {
   max-width: 100%;
   margin:0 auto;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pb-60 {
+  padding-bottom: 60px;
 }
 /*.row {
   display: flex;
