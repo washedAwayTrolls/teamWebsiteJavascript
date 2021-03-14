@@ -89,7 +89,7 @@ function dealHands()
 {
     // alternate handing cards to each player
     // 2 cards each
-    for(var i = 0; i < 2; i++)
+    for(var i = 0; i < 1; i++)
     {
         for (var x = 0; x < players.length; x++)
         {
