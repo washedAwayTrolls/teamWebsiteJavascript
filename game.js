@@ -79,7 +79,7 @@ function startblackjack()
     currentPlayer = 0;
     createDeck();
     shuffle();
-    createPlayers(2);
+    createPlayers(3);
     createPlayersUI();
     dealHands();
     document.getElementById('player_' + currentPlayer).classList.add('active');
@@ -169,8 +169,10 @@ function stay()
         document.getElementById('player_' + currentPlayer).classList.add('active');
     }
 
-    else {
-        end();
+    else if(currentPlayer == players.length-1){
+        document.getElementById('player_' + currentPlayer).classList.remove('active');
+        currentPlayer -= players.length-1;
+        document.getElementById('player_' + currentPlayer).classList.add('active');
     }
 }
 function updateDeck()
