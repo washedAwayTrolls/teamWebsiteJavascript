@@ -79,7 +79,7 @@ function startblackjack()
     currentPlayer = 0;
     createDeck();
     shuffle();
-    createPlayers(3);
+    createPlayers(5);
     createPlayersUI();
     dealHands();
     document.getElementById('player_' + currentPlayer).classList.add('active');
@@ -157,6 +157,11 @@ function check()
         document.getElementById('status').innerHTML = 'Player: ' + players[currentPlayer].ID + ' LOST';
         document.getElementById('status').style.display = "inline-block";
         end();
+    }
+    else if(players[currentPlayer].Points == 21){
+        document.getElementById('status').innerHTML = 'Player: ' + players[currentPlayer].ID + ' WON';
+        document.getElementById('status').style.display = "inline-block";
+        
     }
 }
 
