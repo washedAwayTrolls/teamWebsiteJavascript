@@ -162,6 +162,21 @@ function check()
         document.getElementById('status').innerHTML = 'Player: ' + players[currentPlayer].ID + ' WON';
         document.getElementById('status').style.display = "inline-block";
         
+
+
+    }
+
+    // move on to next player, if any
+    if (currentPlayer != players.length-1) {
+        document.getElementById('player_' + currentPlayer).classList.remove('active');
+        currentPlayer += 1;
+        document.getElementById('player_' + currentPlayer).classList.add('active');
+    }
+
+    else if(currentPlayer == players.length-1){
+        document.getElementById('player_' + currentPlayer).classList.remove('active');
+        currentPlayer -= players.length-1;
+        document.getElementById('player_' + currentPlayer).classList.add('active');
     }
 }
 
