@@ -157,6 +157,19 @@ footer a {
   word-spacing:3px;
   font-family: 'Lato', sans-serif;
 }
+
+.otherPagesText {
+  text-align:center;
+  color:#dfe3e9;
+  font-size:40px;
+  font-weight:600;
+  text-transform: uppercase;
+  margin-top:50px;
+  
+  letter-spacing:2px;
+  word-spacing:3px;
+  font-family: 'Lato', sans-serif;
+}
 /*------------------------------------------- Nathan -------------------------------------------*/
 .teamNames {
     color:cornflowerblue;
