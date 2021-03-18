@@ -49,10 +49,27 @@
     <button id="checkTextBox" type="button" class="btn btn-primary">Check text box</button>
     <br>
     <br>
-    <h3>Enter a range of numbers (minimum to maximum)</h3>
-    <input id="numRange1" type="number"> <h3> to</h3>
+
+
+    <label>Max</label>
+    <input id="numRange1" type="number">
+    <label>Min</label>
     <input id="numRange2" type="number">
-    <button id="generateNumButton" type="button" class="btn btn-primary">Generate random number</button>
+    <input type="submit">
+    <button id="generateNumButton" type="button" class="btn btn-primary" onclick="generateRandomNumber()">Generate random number</button>
+
+   
+
+
+
+
+      <!-- <label for="min">Min:</label>
+      <input type="number" id="min" name="min" value="Hi">
+      <label for="max">Max:</label>
+      <input type="number" id="max" name="max">
+      <input type="submit" id="genNumSubmit" onclick="generateRandomNumber()" value="Hi">  -->
+    
+
     </body>
     <script src="random.js"></script>
 </html>
