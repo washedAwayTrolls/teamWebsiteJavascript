@@ -52,6 +52,8 @@ var changingPicture = document.getElementById("changingPicture");
         var yourRandomNumber = document.getElementById("yourRandomNumber");
         var randomNum = 0;
 
+        
+
         //var randomNumpart1 = Math.floor(Math.random() * 10 + 1);
         console.log(randomNum);
         console.log("Min: " + rangeNum1.value);
@@ -60,17 +62,22 @@ var changingPicture = document.getElementById("changingPicture");
 
        randomNum = Math.floor((Math.random() * rangeNum2.value) + rangeNum1.value);
        console.log(randomNum)
-       while (randomNum > rangeNum2.value) {
+       while (randomNum > rangeNum2.value || randomNum == 0 || randomNum == 1) {
            
         randomNum = Math.floor((Math.random() * rangeNum2.value) + rangeNum1.value);
         console.log(randomNum);
+
+        console.log("Min: " + rangeNum1.value);
+        console.log("Max: " + rangeNum2.value);
     }
 
         //randomNum = Math.floor(Math.random() * ((rangeNum2.value - rangeNum1.value) + 2) + rangeNum1.value);
 
         yourRandomNumber.innerHTML = "Your random number is: " + randomNum;
 
-       // if (randomNum > 30)
+        if (randomNum < (rangeNum2.value + rangeNum1.value) / 2) {
+            awfulLuckAudio.play();
+        }
 
        
         
