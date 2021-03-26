@@ -1,5 +1,5 @@
 var suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
-var values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+var values = [["2","honeybee.png"], ["3", "honeybee.png"], ["4","herculesbeetle.png"], ["5","herculesbeetle.png"], ["6","herculesbeetle.png"], ["7","honeybee.png"], ["8","herculesbeetle.png"], ["9","honeybee.png"], ["10","honeybee.png"], ["J","panda.jpeg"], ["Q","honeybee.png"], ["K","honeybee.png"], ["A","honeybee.png"]];
 var deck = new Array();
 
 function createDeck()
@@ -9,12 +9,12 @@ function createDeck()
     {
         for(var x = 0; x < suits.length; x++)
         {
-            var weight = parseInt(values[i]);
-            if (values[i] == "J" || values[i] == "Q" || values[i] == "K")
+            var weight = parseInt(values[i][0]);
+            if (values[i][0] == "J" || values[i][0] == "Q" || values[i][0] == "K")
                 weight = 10;
-            if (values[i] == "A")
+            if (values[i][0] == "A")
                 weight = 11;
-            var card = { Value: values[i], Suit: suits[x], Weight: weight };
+            var card = { Value: values[i][0], Images: values[i][1], Suit: suits[x], Weight: weight };
             deck.push(card);
         }
     }
@@ -110,9 +110,14 @@ function renderCard(card, player)
 
 function getCardUI(card)
 {
+    var bugs = document.createElement('img');
     var el = document.createElement('div');
+    
+    bugs.src = card.Images;
     el.className = 'card';
-    el.innerHTML = card.Suit + ' ' + card.Value;
+    el.innerHTML = card.Suit + ' ';
+    el.appendChild(bugs);
+    el.innerHTML += card.Value;
     return el;
 }
 
