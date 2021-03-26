@@ -1,5 +1,5 @@
 var suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
-var values = [["2","honeybee.png"], ["3", "honeybee.png"], ["4","herculesbeetle.png"], ["5","herculesbeetle.png"], ["6","herculesbeetle.png"], ["7","honeybee.png"], ["8","herculesbeetle.png"], ["9","honeybee.png"], ["10","honeybee.png"], ["J","panda.jpeg"], ["Q","honeybee.png"], ["K","honeybee.png"], ["A","honeybee.png"]];
+var values = [["2","atlasmoth.png"], ["3", "atlasmoth.png"], ["4","atlasmoth.png"], ["5","honeypotant.png"], ["6","honeypotant.png"], ["7","atlasmoth.png"], ["8","atlasmoth.png"], ["9","honeypotant.png"], ["10","honeypotant.png"], ["J","panda.jpeg"], ["Q","honeypotant.png"], ["K","honeypotant.png"], ["A","atlasmoth.png"]];
 var deck = new Array();
 
 function createDeck()
@@ -79,7 +79,7 @@ function startblackjack()
     currentPlayer = 0;
     createDeck();
     shuffle();
-    createPlayers(5);
+    createPlayers(3);
     createPlayersUI();
     dealHands();
     document.getElementById('player_' + currentPlayer).classList.add('active');
@@ -114,6 +114,7 @@ function getCardUI(card)
     var el = document.createElement('div');
     
     bugs.src = card.Images;
+    bugs.className = 'bugImage';
     el.className = 'card';
     el.innerHTML = card.Suit + ' ';
     el.appendChild(bugs);
