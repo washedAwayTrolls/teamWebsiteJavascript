@@ -138,6 +138,7 @@ footer a {
 }
 .row h2 {
   color:#4f4f4f;
+  color:#18e672;
   text-align: center;
 }
 .center {
@@ -924,7 +925,7 @@ font-kerning: normal;
   background-color:#fff;
   border-radius: 10px;
 }
-.row .modalBtn .content {
+.row .modalBtn .cont  ent {
   padding: 25px;
 }
 

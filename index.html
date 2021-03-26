@@ -146,15 +146,15 @@
             </div>
         </div>
 
-        <div>
-            <h1 class="otherPagesText">Other Pages</h1>
-        </div>
+       
+
+ <!--Game and random module-->
 
 
-        <div class="row">
-            <div class="box" data-toggle="modal" data-target="#natModal">
+            
+            <div  class="box" data-toggle="modal" data-target="#randomModal">
                 <div class="image">
-                    <img src="ant.gif" />
+                    <img src="spacePic.png" />
                 </div>
                 <div class="content">
                     <h3 class="names">Random Page</h3>
@@ -164,9 +164,9 @@
             </div>
 
         
-                <div class="box" data-toggle="modal" data-target="#natModal">
+                <div class="box" data-toggle="modal" data-target="#gameModal">
                     <div class="image">
-                        <img src="ant.gif" />
+                        <img src="spacePic.png" />
                     </div>
                     <div class="content">
                         <h3 class="names">Card Game</h3>
@@ -175,12 +175,59 @@
                     </div>
              
 
-    </div>
+                 </div>
 
 
 
 
     <!--modals-->
+    <div class="modal fade" id="randomModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Random</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="random.html"><img src="ant.gif" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <h5> This is our random page with our random number generator</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Card Game</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="game.html"><img src="ant.gif" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <h5> This is the game that we created</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="modal fade" id="natModal" role="dialog">
         <div class="modal-dialog">
