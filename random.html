@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link
+          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap"
+          rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" type="text/css" />
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
- integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
- <script src="random.js"></script>
+<link rel="stylesheet" href="random.css">
 
  <styles>
-    
+   
  </styles>
     </head>
 
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Washed Ashore Trolls</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="lexi.html">Lexi</a></li>
+            <li><a href="nathan.html">Nathan</a></li>
+            <li><a href="carlos.html">Carlos</a></li>
+            <li><a href="tim2.html">Tim</a></li>
+            <li><a href="emily.html">Emily</a></li>
+            <li class="active"><a href="random.html">Random Page</a></li>
+            <li ><a href="game.html">Card Game</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <title>Random</title>
     <body>
         <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <ul class="navbar-nav">  
-        <li class="navbar-item">  
-          <a href="#" class="nav-link">Homepage</a>  
-        </li>  
-        <li class="navbar-item">  
-          <a href="#" class="nav-link">Blog</a>  
-        </li>  
-        <li class="navbar-item">  
-          <a href="#" class="nav-link">About</a>  
-        </li>  
-        <li class="navbar-item">  
-          <a href="#" class="nav-link">Contact Us</a>  
-        </li>  
-      </ul>
+   
 
-    <button id="buttonTest" type="button" class="btn btn-primary" >Change what this says</button>
+    <button id="buttonTest" type="button" class="btn btn-primary" onclick="buttonPressed()">Change what the photo is</button>
+    <img id="changingPicture" src="chao.png" alt="chao from Sonic">
+    <br>
+    <button id="giveDivBorder" type="button" class="btn btn-primary" onclick="giveDivBorder()">Turn the following text blue.</button>
+    <div id="div1">
+      Turn this text blue!
+    </div>
+    <br>
+    <input id="text1" type="text">
+    <button id="checkTextBox" type="button" class="btn btn-primary">Check text box</button>
+    <br>
+    <br>
+
+
+    <label>Min</label>
+    <input id="numRange1" type="number">
+    <label>Max</label>
+    <input id="numRange2" type="number">
+    
+    <button id="generateNumButton" type="button" class="btn btn-primary" onclick="generateRandomNumber()">Generate random number</button>
+    <h4 id="yourRandomNumber"></h4>
+   
+    
+
+
+
+      <!-- <label for="min">Min:</label>
+      <input type="number" id="min" name="min" value="Hi">
+      <label for="max">Max:</label>
+      <input type="number" id="max" name="max">
+      <input type="submit" id="genNumSubmit" onclick="generateRandomNumber()" value="Hi">  -->
+    
+
     </body>
+    <script src="random.js"></script>
 </html>

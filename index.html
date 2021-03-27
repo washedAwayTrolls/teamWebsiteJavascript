@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap"
@@ -24,23 +25,33 @@
    <div>
 
     <section>
-        <div id="dropDownList" style="background-color:#111111; display: flex; flex-wrap: wrap; margin: 0">
-
-            <a href="index.html"><button class="dropbtn">Home</button></a>
-
-            <div class="dropdown">
-                <button class="dropbtn">The Team</button>
-                <div class="dropdown-content">
-                <a href="nathan.html">Nathan</a>
-                <a href="lexi.html">Lexi</a>
-                <a href="tim2.html">Tim</a>
-                <a href="emily.html">Emily</a>
-                <a href="carlos.html">Carlos</a>
-                </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Washed Ashore Trolls</a>
               </div>
-               <a href="About.html"><button class="dropbtn">About</button></a>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="lexi.html">Lexi</a></li>
+                  <li><a href="nathan.html">Nathan</a></li>
+                  <li><a href="carlos.html">Carlos</a></li>
+                  <li><a href="tim2.html">Tim</a></li>
+                  <li><a href="emily.html">Emily</a></li>
+                  <li><a href="random.html">Random Page</a></li>
+                  <li><a href="game.html">Card Game</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
 
         <div id="banner" style="position:relative; z-index:-1;">
 
@@ -55,9 +66,7 @@
             <!--<div class="wave1"></div>
             <div class="wave2"></div>
             <div class="wave3"></div>-->
-
-
-        </div>
+            </div>
 
               <!--Wavify stuff-->
             <div style="position:relative; z-index: -1; background-color: yellow;">
@@ -146,13 +155,88 @@
             </div>
         </div>
 
+       
 
-    </div>
+ <!--Game and random module-->
+
+
+            
+            <div  class="box" data-toggle="modal" data-target="#randomModal">
+                <div class="image">
+                    <img src="spacePic.png" />
+                </div>
+                <div class="content">
+                    <h3 class="names">Random Page</h3>
+                    <h4 style="text-align:center; color:gray">Random</h4>
+    
+                </div>
+            </div>
+
+        
+                <div class="box" data-toggle="modal" data-target="#gameModal">
+                    <div class="image">
+                        <img src="spacePic.png" />
+                    </div>
+                    <div class="content">
+                        <h3 class="names">Card Game</h3>
+                        <h4 style="text-align:center; color:gray">Card Game</h4>
+        
+                    </div>
+             
+
+                 </div>
 
 
 
 
     <!--modals-->
+    <div class="modal fade" id="randomModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Random</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="random.html"><img src="ant.gif" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <h5> This is our random page with our random number generator</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="gameModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Card Game</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <a href="game.html"><img src="ant.gif" class="modal-Image" /></a>
+                    </div>
+                    <hr>
+                    <h5> This is the game that we created</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="modal fade" id="natModal" role="dialog">
         <div class="modal-dialog">
@@ -241,7 +325,7 @@
                         <a href="emily.html"><img src="emilysnowboard.png" class="modal-Image" /></a>
                     </div>
                     <hr>
-                    <p></p>
+                    <p>I am currently studing Computer Science and GIMM. I also coach gymnastics</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

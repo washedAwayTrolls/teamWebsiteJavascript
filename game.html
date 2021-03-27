@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap"
+      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
 
     <body>
-        
+
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Washed Ashore Trolls</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="lexi.html">Lexi</a></li>
+              <li><a href="nathan.html">Nathan</a></li>
+              <li><a href="carlos.html">Carlos</a></li>
+              <li><a href="tim2.html">Tim</a></li>
+              <li><a href="emily.html">Emily</a></li>
+              <li><a href="random.html">Random Page</a></li>
+              <li class="active"><a href="game.html">Card Game</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+       
+        <div class="game">
+            <div class="game">
+                   <h3>Blackjack</h3>
+           
+           <div class="game-body">
+                  <div class="game-options">
+                   <input type="button" id="btnStart" class="btn" value="start" onclick="startblackjack()">
+                   <input type="button" class="btn" value="hit me" onclick="hitMe()">
+                   <input type="button" class="btn" value="stay" onclick="stay()">
+                   </div>
+           
+                       <div class="status" id="status"></div>
+           
+                   <div id="deck" class="deck">
+                       <div id="deckcount">52</div>
+                   </div>
+           
+                   <div id="players" class="players">
+                   </div>
+           
+                   <div class="clear"></div>
+           </div>
+       </div>
+         
+       
     </body>
+    <script src="game.js"></script>
 </html>
