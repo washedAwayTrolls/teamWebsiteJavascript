@@ -147,7 +147,6 @@ footer a {
 }
 .row h2 {
   color:#4f4f4f;
-  color:#18e672;
   text-align: center;
 }
 .center {
@@ -175,7 +174,6 @@ footer a {
   font-weight:600;
   text-transform: uppercase;
   margin-top:50px;
-  
   letter-spacing:2px;
   word-spacing:3px;
   font-family: 'Lato', sans-serif;
@@ -1045,15 +1043,18 @@ font-kerning: normal;
 
 
 /*game*/
+.blackjack-bg {
+  background-image: linear-gradient(to right, rgba(71, 84, 105,1), rgba(96, 126, 148,1));
+}
 .game
 {
-    width: 80%;
-    border: solid 1px #ddd;
+    width: 100%;
     margin: 0 auto;
-   background: #3ac7fe;
-border: solid 10px;
 text-align:center;
-min-height:430px;
+height: 100%;
+}
+.game-area {
+  height: 100%;
 }
 
 .btn{
@@ -1069,9 +1070,10 @@ min-height:430px;
 
 .game h3
 {
-padding: 10px;
-background:black;
+padding: 50px;
+background:linear-gradient(to bottom, rgba(0, 0, 0,0.5), rgba(0, 0, 0,0.25));
 color:white;
+margin: 0;
 }
 
 .game .game-body
@@ -1095,6 +1097,7 @@ text-align:center;
     text-align: center;
     margin: 3px;
     border:solid 3px;
+    color:#222;
 }
 
 .game .status
@@ -1119,19 +1122,28 @@ text-align: center;
 
 .player{
     width: 30%;
-    border: solid 5px #f5f5f5;
+    border: solid 5px #444;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
     margin:1%;
     vertical-align: top;
-    background:#f5f5f5;
+    background:#444;
 }
-
+.player .card {
+    color:#212121;
+}
 .player.active{
-    border: solid 5px #222;
+    border: solid 5px #f2921e;
+    box-shadow: 0 5px 60px rgba(0,0,0,0.35);
+    color:#fff;
 }
-
+.player.active .points {
+  color:#f2921e;
+}
+.player.active .card {
+  color:#222;
+}
 .points{
     text-align: center;
     font-size: 20pt;
@@ -1198,10 +1210,10 @@ text-align: center;
 }
 
 .card .img{
- 
+
     width: 10%;
     height: 10%;
-  
+
 }
 
 .card .diamonds
