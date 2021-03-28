@@ -73,23 +73,14 @@ body {
   margin:0;
 }
 /*------------------------------------------- INDEX -------------------------------------------*/
-.img-responsive img {
-  max-width: 100%;
-  margin:0 auto;
-}
-.pt-60 {
-  padding-top: 60px;
-}
-.pb-60 {
-  padding-bottom: 60px;
-}
-/*.row {
+.row {
   display: flex;
   padding: 80px;
   flex-wrap: wrap;
   background-image: linear-gradient(0deg,#174563, #1A6FA8) ;
   margin: 0;
-}*/
+
+}
 .row .box .image {
   width:100%;
 
@@ -147,6 +138,7 @@ footer a {
 }
 .row h2 {
   color:#4f4f4f;
+  color:#18e672;
   text-align: center;
 }
 .center {
@@ -161,13 +153,11 @@ footer a {
   font-weight:600;
   text-transform: uppercase;
   margin-top:50px;
-
+  
   letter-spacing:2px;
   word-spacing:3px;
   font-family: 'Lato', sans-serif;
 }
-<<<<<<< HEAD
-=======
 
 .otherPagesText {
   text-align:center;
@@ -176,11 +166,11 @@ footer a {
   font-weight:600;
   text-transform: uppercase;
   margin-top:50px;
+  
   letter-spacing:2px;
   word-spacing:3px;
   font-family: 'Lato', sans-serif;
 }
->>>>>>> parent of 00b93d7 (Revert "card styles")
 /*------------------------------------------- Nathan -------------------------------------------*/
 .teamNames {
     color:cornflowerblue;
@@ -592,7 +582,7 @@ a.btn-gold:hover, a.btn-gold:active {
 
 
 
-  .carlos .container{
+  .container{
     text-align: center;
     position: absolute;
     top: 50%;
@@ -600,7 +590,7 @@ a.btn-gold:hover, a.btn-gold:active {
     transform: translate(-50%, -50%);
     width: 100%
   }
-  .carlos .container span{
+  .container span{
     text-transform: uppercase;
     display: block;
   }
@@ -935,7 +925,7 @@ font-kerning: normal;
   background-color:#fff;
   border-radius: 10px;
 }
-.row .modalBtn .content {
+.row .modalBtn .cont  ent {
   padding: 25px;
 }
 
@@ -1039,8 +1029,6 @@ font-kerning: normal;
 .dropdown:hover .dropbtn {
   background-color: #3a3a3a;
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -1244,4 +1232,3 @@ text-align: center;
 .navbar {
   margin-bottom: 0px;
 }
->>>>>>> parent of 00b93d7 (Revert "card styles")
